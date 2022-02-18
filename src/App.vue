@@ -2,6 +2,7 @@
   <div id="app">
       <h2 class="greenFont">My first ever Vue Tutorial</h2>
 
+<<<<<<< Updated upstream
       <h4 class="blueFont">{{ message }}</h4>
 
       Name:<input type="text" v-model="name"/> <br> 
@@ -20,6 +21,27 @@
     <button class="greenFont" @click="increase5"> +5</button>
     <button class="redFont" @click="decrease5"> -5</button>
 
+=======
+    <h4 class="blueFont">{{ message }}</h4>
+
+    Name: <input type="text" v-model="name" /> <br>
+    Addr: <input type="text" v-model="addr" /> <br>
+
+    Email: <input type="text" v-model="email" /> <br>
+    Tel: <input type="text" v-model="tel" /> <br>
+
+    <h2>Name : {{ name }}</h2>
+    <h3>Addr : {{ addr }}</h3>
+    <h3>Email : {{ email }}</h3>
+    <h3>Tel : {{ tel }}</h3>
+    
+    <button class="blueFont" @click="increase"> +1</button>
+    <button class="redFont" @click="decrease"> -1</button>
+    <br>
+    <button class="blueFont" @click="increase5"> +5</button>
+    <button class="redFont" @click="decrease5"> -5</button>
+    
+>>>>>>> Stashed changes
     <h2> {{counter}}</h2>
     <br>
     <img v-bind:src="image1">
@@ -27,7 +49,17 @@
     <img :src="image3">
     <br>
 
+<<<<<<< Updated upstream
 </div>
+=======
+    <h3><a v-bind:href="url1">{{web1}}</a></h3>
+    <h3><a :href="url2">{{web2}}</a></h3>
+    <h3><a :href="url3">{{web3}}</a></h3>
+
+
+    
+  </div>
+>>>>>>> Stashed changes
 </template>
 
 <script>
@@ -41,6 +73,7 @@ export default {
       addr: "",
       email: "",
       tel: "",
+<<<<<<< Updated upstream
       image1: "apple.jpg",
       image2: "orange.jpg",
       image3: "strawberry.jpg",
@@ -51,10 +84,24 @@ export default {
       web2: "Orange Company",
       web3: "Another Fruit Company",
       counter: 0
+=======
+      image1: "orange.jpg",
+      image2: "strawberry.jpg",
+      image3: "apple.jpg",
+      url1: "http://apple.com",
+      url2: "http://orange.com",
+      url3: "http://abc.com",
+      web1: "Apple Company",
+      web2: "Orange Company",
+      web3: "ABC Company",
+      counter: 0
+
+>>>>>>> Stashed changes
     };
   },
   methods: {
     increase() {
+<<<<<<< Updated upstream
       this.counter = this.counter + 1;
     },
     decrease() {
@@ -68,6 +115,21 @@ export default {
     }
   },
   computed: {},
+=======
+    this.counter = this.counter + 1;
+   },
+    decrease() {
+       this.counter = this.counter - 1;
+    },
+    increase5() {
+    this.counter = this.counter + 5;
+   },
+    decrease5() {
+       this.counter = this.counter - 5;
+    }
+  },
+  computed: {} 
+>>>>>>> Stashed changes
 };
 </script>
 
